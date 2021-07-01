@@ -13,7 +13,7 @@ services:
       - DIUN_PROVIDERS_DOCKER=true
       - DIUN_PROVIDERS_DOCKER_WATCHBYDEFAULT=true
       - DIUN_WATCH_FIRSTCHECKNOTIF=true
-      - DIUN_NOTIF_DISCORD_WEBHOOKURL=https://canary.discord.com/api/webhooks/795743439332704256/zUKR4a0_aqEE9TTCk4uxmkKQN02H8VsrmBLVham6rt9DwMRFcj1c9AgR2FGTYcc8y6KF
+      - DIUN_NOTIF_DISCORD_WEBHOOKURL=$WEBHOOK
     volumes:
       - nfs:/data
       - /var/run/docker.sock:/var/run/docker.sock
